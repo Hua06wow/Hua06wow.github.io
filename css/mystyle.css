@@ -21,11 +21,40 @@ text-transform: uppercase;
 /* 範例⽰範：設定為⾼質感「深⼤海藍」 (RGB: 25, 25, 112)
 */
 --bs-primary-rgb: 25, 25, 112;
-/* (可選) 同步統⼀超連結與滑⿏懸停顏⾊ */
---bs-link-color: rgb(25, 25, 112);
---bs-link-hover-color: rgb(15, 15, 80);
+/* (可選) 同步統一超連結與滑鼠懸停顏色 */
+--bs-link-color: rgb(117, 171, 218);
+--bs-link-hover-color: rgb(44, 51, 64);
 }
 /* 同步修改社群圖⽰按鈕 Hover 時的背景⾊彩 */
 .social-icons .social-icon:hover {
-background-color: rgb(25, 25, 112);
+background-color: rgb(140, 100, 97);
+}
+
+/* ===================================================
+4. Bento Grid 便當盒⾵格作品集樣式
+=================================================== */
+.bento-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1
+fr));
+gap: 20px;
+}
+.bento-item {
+background-color: #D5E5F2;
+border: 1px solid #a8d2f4;
+border-radius: 12px;
+padding: 24px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* 滑⿏懸停時微升效果 */
+.bento-item:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+/* 桌機與平板螢幕下，讓⾸張主打作品跨越 2 欄 */
+@media (min-width: 768px) {
+.bento-wide {
+grid-column: span 2;
+}
 }
