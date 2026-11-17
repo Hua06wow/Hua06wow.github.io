@@ -20,14 +20,14 @@ text-transform: uppercase;
 */
 /* 範例⽰範：設定為⾼質感「深⼤海藍」 (RGB: 25, 25, 112)
 */
---bs-primary-rgb: 25, 25, 112;
+--bs-primary-rgb: 227, 169, 188;
 /* (可選) 同步統一超連結與滑鼠懸停顏色 */
---bs-link-color: rgb(117, 171, 218);
---bs-link-hover-color: rgb(44, 51, 64);
+--bs-link-color: rgb(168, 227, 194);
+--bs-link-hover-color: rgb(99, 56, 70);
 }
-/* 同步修改社群圖⽰按鈕 Hover 時的背景⾊彩 */
+/* 同步修改社群圖示按鈕 Hover 時的背景色彩 */
 .social-icons .social-icon:hover {
-background-color: rgb(140, 100, 97);
+background-color: rgb(168, 227, 194);
 }
 
 /* ===================================================
@@ -40,8 +40,8 @@ fr));
 gap: 20px;
 }
 .bento-item {
-background-color: #D5E5F2;
-border: 1px solid #a8d2f4;
+background-color: #e8fdf1;
+border: 1px solid #A8E3C2;
 border-radius: 12px;
 padding: 24px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
